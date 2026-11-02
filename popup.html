@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HR Reader</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <main class="app">
+        <header>
+            <div class="brand">
+                <div class="logo">HR</div>
+                <div>
+                    <h1>READER<span>.</span></h1>
+                    <p>GROQ CODING ASSISTANT</p>
+                </div>
+            </div>
+            <button id="openSettings" class="settings-icon" title="Settings">⚙</button>
+        </header>
+
+        <div class="language-row">
+            <label for="language">LANGUAGE</label>
+            <select id="language">
+                <option>Python</option>
+                <option>C++</option>
+                <option>Java</option>
+            </select>
+        </div>
+
+        <button id="generate" class="main-button">
+            READ &amp; GENERATE <span>↗</span>
+        </button>
+
+        <div class="status-area">
+            <span class="status-dot" id="statusDot"></span>
+            <div>
+                <strong id="status">Checking connection</strong>
+                <small id="substatus">Preparing HR Reader</small>
+            </div>
+        </div>
+
+        <section class="result" id="result" hidden>
+            <div class="result-heading">
+                <span class="success-dot"></span>
+                <strong>CODE GENERATED</strong>
+            </div>
+
+            <div class="buttons">
+                <button id="copy" class="copy-button">COPY CODE</button>
+                <button id="view" class="secondary-button">VIEW CODE</button>
+            </div>
+
+            <button id="explain" class="explain-button">
+                VIEW CONCEPTS <span>↗</span>
+            </button>
+
+            <pre id="codePreview" hidden></pre>
+            <div id="explanation" hidden></div>
+        </section>
+
+        <footer>
+            <span>HR READER</span>
+            <span>V3.0 / GROQ</span>
+        </footer>
+    </main>
+
+    <script src="popup.js"></script>
+</body>
+</html>

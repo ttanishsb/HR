@@ -1,0 +1,27 @@
+
+{
+  "manifest_version": 3,
+  "name": "HR Reader",
+  "version": "3.0.0",
+  "description": "Groq-powered programming practice assistant",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://api.groq.com/*",
+    "https://leetcode.com/*",
+    "https://www.leetcode.com/*",
+    "https://hackerrank.com/*",
+    "https://www.hackerrank.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "HR Reader",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html"
+}

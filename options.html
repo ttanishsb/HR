@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>HR Reader Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <main>
+    <h1>HR READER<span>.</span></h1>
+    <p>GROQ CONFIGURATION</p>
+
+    <label for="apiKey">GROQ API KEY</label>
+    <input id="apiKey" type="password" placeholder="gsk_...">
+
+    <label for="model">MODEL ID</label>
+    <input id="model" value="openai/gpt-oss-20b">
+
+    <button id="save">SAVE SETTINGS</button>
+    <p id="status"></p>
+
+    <script src="options.js"></script>
+  </main>
+</body>
+</html>

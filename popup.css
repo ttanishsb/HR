@@ -1,0 +1,213 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 300px;
+    margin: 0;
+    background: #111;
+    color: #eee;
+    font-family: Arial, sans-serif;
+}
+
+.app {
+    padding: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+    display: grid;
+    place-items: center;
+    background: #252525;
+    border: 1px solid #393939;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 15px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+h1 span {
+    color: #d9ff45;
+}
+
+header p {
+    font-size: 8px;
+    color: #777;
+    margin: 3px 0 0;
+    letter-spacing: 1px;
+}
+
+.indicator,
+.status-dot,
+.success-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #d9ff45;
+}
+
+.language-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0;
+    font-size: 9px;
+    color: #888;
+}
+
+select {
+    background: #222;
+    color: white;
+    border: 1px solid #383838;
+    padding: 6px 9px;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 10px;
+    letter-spacing: .4px;
+    border-radius: 5px;
+    padding: 11px;
+}
+
+.main-button {
+    width: 100%;
+    background: #d9ff45;
+    color: #111;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.status-area {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin: 14px 0;
+}
+
+.status-area strong {
+    display: block;
+    font-size: 11px;
+}
+
+.status-area small {
+    display: block;
+    font-size: 9px;
+    color: #777;
+    margin-top: 3px;
+}
+
+.status-dot {
+    background: #666;
+}
+
+.result {
+    border-top: 1px solid #292929;
+    padding-top: 12px;
+}
+
+.result-heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.success-dot {
+    background: #d9ff45;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+}
+
+.copy-button {
+    background: #d9ff45;
+    color: #111;
+    border: none;
+}
+
+.secondary-button,
+.explain-button {
+    background: #222;
+    color: #eee;
+    border: 1px solid #393939;
+}
+
+.explain-button {
+    width: 100%;
+    margin-top: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+
+pre,
+#explanation {
+    background: #1b1b1b;
+    border: 1px solid #303030;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 9px;
+    max-height: 220px;
+    overflow: auto;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    font-family: Consolas, monospace;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+#explanation {
+    font-family: Arial, sans-serif;
+    color: #ccc;
+}
+
+#explanation h3 {
+    color: #d9ff45;
+    font-size: 12px;
+}
+
+#explanation p {
+    line-height: 1.5;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #292929;
+    font-size: 8px;
+    color: #666;
+    letter-spacing: 1px;
+}
+
+[hidden] {
+    display: none !important;
+}
